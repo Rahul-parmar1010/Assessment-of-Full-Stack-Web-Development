@@ -1,0 +1,44 @@
+.periodic-table {
+    width: 100%;
+    
+}
+
+.periodic-table table {
+    border-collapse: collapse;
+    width: 100%;
+   
+    
+
+}
+
+.periodic-table th,
+.periodic-table td {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+  
+    
+}
+
+.periodic-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  
+  
+}
+
+.periodic-table .element {
+    font-weight: bold;
+     
+}
+
+.periodic-table .element::before {
+    content: attr(data-symbol);
+}
+
+.periodic-table .element::after {
+    content: attr(data-number);
+    font-size: 0.8em;
+}
+
+/* Add more CSS styling as desired */
